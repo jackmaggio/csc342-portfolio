@@ -1,0 +1,44 @@
+body {
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  grid-template-rows: 15vh minmax(400px, 70vh) 15vh;
+  background-color: rgb(227, 226, 226);
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+.home-page {
+  grid-row: 2;
+  border: 2px solid black;
+  display: grid;
+  grid-template-rows: 15% 50% 20% 15%;
+  background-color: burlywood;
+  box-shadow: 0 0 0.5dvw black;
+}
+
+.home-page h1 {
+  grid-row: 2;
+  text-align: center;
+  height: min-content;
+  font-size: 5dvw;
+  color: black;
+  font-weight: bold;
+}
+
+.home-page button {
+  grid-row: 3;
+  width: 30%;
+  height: 100%;
+  margin: auto;
+  background-color: darkblue;
+  color: white;
+  font-size: large;
+  font-weight: bold;
+  border-radius: 30px;
+}
+
+.home-page button:hover {
+  background-color: rgb(2, 2, 87);
+}

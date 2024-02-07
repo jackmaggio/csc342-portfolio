@@ -1,0 +1,382 @@
+input,
+select {
+  background-color: rgb(230, 223, 223) !important;
+  border: 2px solid black;
+}
+
+.body {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 20vw 60vw 20vw;
+  grid-template-rows: 3vh 94vh 3vh;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(215, 210, 210);
+}
+
+.payment-form {
+  width: 100%;
+  height: 100%;
+  grid-row: 2;
+  grid-column: 2;
+  box-shadow: 0dvw 0dvw 1.5dvw black;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 10% 50% 40%;
+  border: 2px solid black;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: white;
+}
+
+.form-header {
+  grid-row: 1;
+  grid-column: 1/3;
+
+  background: royalblue;
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  font-size: 3dvw;
+  font-weight: bold;
+  border-bottom: 2px solid black;
+  margin: 0%;
+}
+.sender-details {
+  grid-column: 1;
+  grid-row: 2;
+  display: grid;
+  grid-template-rows: 10% 70% 20%;
+  grid-auto-flow: row;
+  width: 100%;
+  border-right: 2px solid black;
+}
+
+.sender-details-title {
+  width: 90%;
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1%;
+}
+.sender-details-title h1 {
+  width: 80%;
+  font-size: 1.5dvw;
+}
+.sender-details-upload {
+  width: 90%;
+  display: grid;
+  grid-template-columns: 80% 20%;
+  grid-template-rows: 90% 10%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.sender-details-picture {
+  grid-column: 1 / 3;
+  grid-row: 1;
+  background-color: white;
+  width: 100%;
+  height: 90%;
+  border: 2px solid black;
+  box-sizing: border-box;
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sender-details-picture img {
+  width: 95%;
+  height: 95%;
+  object-fit: contain;
+}
+.sender-details-file {
+  grid-column: 1 / 3;
+  grid-row: 2;
+  height: 95%;
+  width: 100%;
+  padding: 0%;
+  padding-block: 0%;
+  padding-inline: 0%;
+  margin-bottom: auto;
+  border-top: none;
+  border: 2px solid black;
+  box-sizing: border-box;
+}
+
+.sender-details-browse {
+  grid-column: 2;
+  grid-row: 2;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  font-size: 0.8dvw;
+  padding: 0%;
+  border-top: none;
+  border-right: 2px solid black;
+  background-color: aliceblue;
+}
+
+.sender-details-input {
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-auto-flow: column;
+  /* margin: auto; */
+  margin-left: auto;
+  margin-right: auto;
+
+  margin-top: auto;
+}
+
+.sender-details-name-input {
+  width: 90%;
+  display: grid;
+  grid-template-rows: 40% 60%;
+  grid-auto-flow: row;
+  /* font-size: 1dvw; */
+}
+
+#sender-details-lastname {
+  margin-left: auto;
+}
+.sender-details-name-input label {
+  font-size: 1dvw;
+  font-weight: bold;
+  padding-bottom: 3%;
+}
+.sender-details-name-input input {
+  grid-column: 1;
+  grid-row: 2;
+  height: 95%;
+  width: 95%;
+  padding: 0%;
+  margin: 0%;
+}
+.recipient-details {
+  grid-column: 2;
+  grid-row: 2;
+  display: grid;
+  grid-template-rows: 10% 20% 40% 15% 15%;
+  grid-auto-flow: row;
+}
+
+.recipient-details-title {
+  width: 90%;
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1%;
+}
+.recipient-details-title h1 {
+  width: 80%;
+  /* margin-left: auto; */
+  font-size: 1.5dvw;
+}
+
+.recipient-details-input {
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-auto-flow: column;
+  margin: auto;
+  padding-top: 3%;
+}
+
+.recipient-details-name-input {
+  width: 90%;
+  display: grid;
+  grid-template-rows: 40% 60%;
+  grid-auto-flow: row;
+  /* font-size: 1dvw; */
+}
+
+#recipient-details-lastname {
+  margin-left: auto;
+}
+.recipient-details-name-input label {
+  font-size: 1dvw;
+  font-weight: bold;
+  padding-bottom: 3%;
+}
+.recipient-details-name-input input {
+  grid-column: 1;
+  grid-row: 2;
+  height: 95%;
+  width: 95%;
+  padding: 0%;
+  margin: 0%;
+}
+
+.recipient-message {
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  display: grid;
+  grid-template-rows: 10% 90%;
+  grid-auto-flow: row;
+}
+
+.recipient-message label {
+  margin: 0%;
+  font-size: 1dvw;
+  font-weight: bold;
+}
+
+.recipient-message textarea {
+  height: 95%;
+  width: 95%;
+  text-wrap: wrap;
+  box-sizing: border-box;
+  margin-top: auto;
+  border: 2px solid black;
+}
+
+.recipient-notify-wrapper {
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  grid-template-rows: 50% 50%;
+  grid-auto-flow: row;
+  font-size: 1.1dvw;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.recipient-notify-wrapper h5 {
+  margin-top: auto;
+  margin: 0%;
+}
+
+.notify-options {
+  display: grid;
+  grid-template-columns: 28% 28% 44%;
+  grid-auto-flow: column;
+  font-size: 1dvw;
+}
+
+.option-wrapper {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  grid-auto-flow: column;
+}
+
+.notify-options label {
+  text-align: center;
+  margin: auto;
+}
+.notify-options input {
+  margin: 0%;
+  padding: 0%;
+}
+
+.notify-options-input {
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-auto-flow: column;
+  /* margin: auto; */
+  margin-left: auto;
+  margin-right: auto;
+
+  margin-top: auto;
+
+  padding-top: 3%;
+}
+
+.notify-options-contact-input {
+  width: 90%;
+  display: grid;
+  grid-template-rows: 40% 60%;
+  grid-auto-flow: row;
+  /* font-size: 1dvw; */
+}
+
+#notify-options-phone {
+  margin-left: auto;
+}
+.notify-options-contact-input label {
+  font-size: 1dvw;
+  font-weight: bold;
+  padding-bottom: 3%;
+}
+.notify-options-contact-input input {
+  grid-column: 1;
+  grid-row: 2;
+  height: 95%;
+  width: 95%;
+  padding: 0%;
+  margin: 0%;
+}
+
+.payment-details {
+  grid-column: 1 / 3;
+  grid-row: 3;
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  display: grid;
+  grid-template-rows: 15% 20% 20% 15% 30%;
+  grid-auto-flow: row;
+}
+
+.payment-details label {
+  font-weight: bold;
+}
+.payment-details-title {
+  width: 100%;
+}
+
+.payment-details-title h1 {
+  width: 80%;
+  font-size: 1.5dvw;
+  text-align: left;
+}
+
+.payment-card {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  margin-top: auto;
+  font-size: 1dvw;
+}
+
+.payment-card input,
+select {
+  width: 90%;
+}
+
+.card-details {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  font-size: 1dvw;
+  margin-top: auto;
+}
+
+.card-details input {
+  width: 90%;
+}
+
+.terms-and-conditions {
+  font-size: 1dvw;
+  margin: auto;
+}
+
+.terms-and-conditions label {
+  font-weight: normal !important;
+}
+.send-button {
+  background-color: rgb(30, 206, 30);
+  color: white;
+  font-size: 1.5dvw;
+  font-weight: bold;
+  width: 50%;
+  height: 80%;
+  margin: auto;
+  box-shadow: 0dvw 0dvw 0.5dvw black;
+}
+
+.send-button:hover {
+  background-color: rgb(9, 159, 9);
+}

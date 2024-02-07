@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/css/form_styles.css" />
+    <script src="/js/form.js" defer></script>
+  </head>
+  <body class="body">
+    <form
+      action="/send"
+      method="post"
+      class="payment-form"
+      id="payment-form"
+      enctype="multipart/form-data"
+    >
+      <h1 class="form-header">Pay Your Friends!</h1>
+      <section class="sender-details">
+        <div class="sender-details-title">
+          <h1>Sender Details</h1>
+        </div>
+        <content class="sender-details-upload">
+          <div class="sender-details-picture">
+            <img id="preview-image" alt="Preview Image" />
+          </div>
+          <input
+            type="file"
+            id="file"
+            name="picture"
+            class="sender-details-file"
+            accept="image/*"
+            required
+          />
+        </content>
+        <content class="sender-details-input">
+          <div class="sender-details-name-input">
+            <label for="sender-fname">First Name:</label>
+            <input type="text" id="sender-fname" name="sender-fname" required />
+          </div>
+          <div id="sender-details-lastname" class="sender-details-name-input">
+            <label for="sender-lname">Last Name:</label>
+            <input type="text" id="sender-lname" name="sender-lname" required />
+          </div>
+        </content>
+      </section>
+      <section class="recipient-details">
+        <div class="recipient-details-title"><h1>Recipient Details</h1></div>
+        <content class="recipient-details-input">
+          <div class="recipient-details-name-input">
+            <label for="recipient-fname">First Name:</label>
+            <input
+              type="text"
+              id="recipient-fname"
+              name="recipient-fname"
+              required
+            />
+          </div>
+          <div
+            id="recipient-details-lastname"
+            class="recipient-details-name-input"
+          >
+            <label for="recipient-lname">Last Name:</label>
+            <input
+              type="text"
+              id="recipient-lname"
+              name="recipient-lname"
+              required
+            />
+          </div>
+        </content>
+        <div class="recipient-message">
+          <label for="message">Message</label>
+          <textarea
+            name="message"
+            id="message"
+            minlength="10"
+            required
+          ></textarea>
+        </div>
+        <div class="recipient-notify-wrapper">
+          <h5>Notify Recipient</h5>
+          <div class="notify-options">
+            <content class="option-wrapper">
+              <label for="notify-email">Email</label>
+              <input type="radio" name="notify" id="notify-email" />
+            </content>
+            <content class="option-wrapper">
+              <label for="notify-sms">SMS</label>
+              <input type="radio" name="notify" id="notify-sms" />
+            </content>
+            <content class="option-wrapper">
+              <label for="notify-dnn">Do Not Notify</label>
+              <input type="radio" name="notify" id="notify-dnn" />
+            </content>
+          </div>
+        </div>
+        <content class="notify-options-input">
+          <div class="notify-options-contact-input">
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email" autocomplete="off" />
+          </div>
+          <div id="notify-options-phone" class="notify-options-contact-input">
+            <label for="phone">Phone</label>
+            <input type="text" name="phone" id="phone" autocomplete="off" />
+          </div>
+        </content>
+      </section>
+      <section class="payment-details">
+        <div class="payment-details-title"><h1>Payment Details</h1></div>
+        <section class="payment-card">
+          <content>
+            <label for="card-type">Card Type</label>
+            <select class="card-type" id="card-type" name="card-type">
+              <option>Visa</option>
+              <option>Master Card</option>
+            </select>
+          </content>
+
+          <content id="card-number">
+            <label for="card-number-input">Card Number:</label>
+            <input
+              id="card-number-input"
+              type="text"
+              pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}"
+              name="card-number-input"
+              required
+            />
+          </content>
+        </section>
+        <section class="card-details">
+          <content
+            ><label for="expiration-date">Expiration Date</label>
+            <input
+              id="expiration-date"
+              type="month"
+              name="expiration-date"
+              required
+          /></content>
+          <content
+            ><label for="ccv">CCV:</label>
+            <input
+              id="ccv"
+              type="password"
+              name="ccv"
+              minlength="3"
+              maxlength="4"
+              required
+          /></content>
+          <content
+            ><label for="amount">Amount</label>
+            <input
+              id="amount"
+              name="amount"
+              type="number"
+              step=".01"
+              min="0.01"
+              required
+          /></content>
+        </section>
+        <section class="terms-and-conditions">
+          <input name="terms" id="terms" type="checkbox" required />
+          <label for="terms">I agree to the Terms and Conditions</label>
+        </section>
+        <button class="send-button" type="submit">Send</button>
+      </section>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+{
+  "name": "QuizMe",
+  "short_name": "QuizMe",
+  "scope": "/",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#252831",
+  "background_color": "#f3f3f3",
+  "icons": [
+    {
+      "src": "/images/icon_192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/images/icon_256.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "/images/icon_384.png",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "/images/icon_512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

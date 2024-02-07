@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/post_discussion_styles.css" />
+    <script src="/js/common.js" type="module"></script>
+    <script src="/js/post_discussion_scripts.js" type="module"></script>
+    <title>Create StudySet</title>
+    <link
+      rel="manifest"
+      href="/manifest.webmanifest"
+      crossorigin="use-credentials"
+    />
+    <meta name="theme-color" content="#252831" />
+    <link rel="apple-touch-icon" href="/images/icon_192.png" />
+    <link rel="icon" type="image/png" href="/images/icon_192.png" />
+  </head>
+  <body>
+    <header>
+      <h1>QuizMe</h1>
+    </header>
+    <div class="header-wrapper">
+      <div class="header">Post Discussion</div>
+    </div>
+    <div class="cards-wrapper">
+      <div class="card-info-wrapper">
+        <div class="question">Question</div>
+        <textarea
+          cols="42"
+          rows="5"
+          class="question-text"
+          id="question-text"
+          placeholder="What is your question...?"
+        ></textarea>
+      </div>
+    </div>
+    <div class="create-wrapper">
+      <button class="submit" id="submit-button">Create New Discussion</button>
+    </div>
+    <div class="back-button-wrapper">
+      <button id="back-button" class="back-button">Back</button>
+    </div>
+  </body>
+</html>

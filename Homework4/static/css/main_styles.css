@@ -1,0 +1,143 @@
+body {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-rows: minmax(100px, 10vh) minmax(250px, 30vh);
+  grid-auto-flow: row;
+  row-gap: 30px;
+  background-color: aliceblue;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+ul {
+  list-style-type: none;
+}
+
+.header-wrapper {
+  background-color: rgb(61, 61, 160);
+  border-bottom: 1px solid black;
+  box-shadow: 0 0 0.5dvw black;
+  background-color: darkblue;
+}
+
+.profile-info {
+  margin-top: auto;
+}
+
+.header {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.post-howler-wrapper {
+  grid-row: 2;
+  min-width: 400px;
+  max-width: 786px;
+  border: 2px solid black;
+  display: flex;
+  justify-content: space-around;
+  box-shadow: 0 0 0.5dvw black;
+  background-color: darkslateblue;
+  padding: 0%;
+}
+
+.form-wrapper {
+  width: 90%;
+  height: 80%;
+  margin: auto;
+}
+
+.form-wrapper textarea {
+  margin: auto;
+  box-sizing: border-box;
+  border: 2px solid black !important;
+  border-radius: 25px !important;
+  width: 100%;
+  height: 85%;
+  box-shadow: 0 0 0.5dvw black;
+}
+
+textarea::placeholder {
+  color: black !important;
+}
+.form-wrapper button {
+  background-color: #9a9a35;
+  color: white;
+  font-weight: bold;
+  border-color: black !important;
+  box-shadow: 0 0 0.5dvw black;
+}
+
+.form-wrapper button:hover {
+  background-color: #666606 !important;
+  border-color: #666606 !important;
+}
+
+.howl-button-wrapper {
+  padding-top: 10px;
+}
+
+.howls-wrapper {
+  min-width: 400px;
+  max-width: 786px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  padding: 0;
+}
+
+.howl {
+  width: 100%;
+  border: black 1px solid;
+  box-sizing: border-box;
+  box-shadow: 0 0 0.5dvw black;
+  background-color: #a7a6a6;
+  flex-grow: auto;
+}
+
+.howl-header {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 10% 60% 30%;
+  grid-auto-flow: column;
+  height: fit-content;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  padding-top: 2%;
+  text-align: center;
+}
+
+.howl-header:hover {
+  background-color: darkslateblue;
+}
+
+.howl-date {
+  margin-left: auto;
+  font-size: 15px;
+}
+
+.howl-content {
+  font-size: 15px;
+  width: 100%;
+  padding: 2%;
+  border: 1px solid black;
+  margin: auto;
+  color: black;
+  background-color: white;
+  height: fit-content;
+}
+
+.back-button-wrapper {
+  margin-top: auto;
+}
+
+.back-button {
+  margin: auto;
+  background-color: darkblue;
+  border-color: darkblue;
+}

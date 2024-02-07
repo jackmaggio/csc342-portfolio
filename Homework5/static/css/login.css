@@ -1,0 +1,90 @@
+body {
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  grid-template-columns: minmax(100px, 25vw) minmax(100px, 50vw) minmax(
+      100px,
+      25vw
+    );
+  grid-template-rows: 15vh minmax(400px, 70vh) 15vh;
+  background-color: rgb(227, 226, 226);
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+.login-page {
+  grid-row: 2;
+  grid-column: 2;
+  border: 2px solid black;
+  display: grid;
+  grid-template-rows: 25% 50% 25%;
+  background-color: burlywood;
+  box-shadow: 0 0 0.5dvw black;
+}
+
+.login-header {
+  margin: auto;
+  border-bottom: black;
+  font-weight: bold;
+  color: rgb(57, 24, 6);
+}
+
+.input-wrapper {
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-rows: minmax(70px, 26%) minmax(100px, 37%) minmax(100px, 37%);
+}
+
+.input-wrapper input {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid rgb(74 31 7);
+  background-color: burlywood;
+  height: 30%;
+}
+
+input:focus {
+  outline: none;
+}
+
+input::placeholder {
+  color: rgb(74 31 7);
+}
+.input-wrapper input::-moz-focus-outer {
+  border: none;
+  border-bottom: 2px solid grey;
+}
+
+.login-button {
+  width: 50%;
+  height: 60%;
+  margin: auto;
+  border-radius: 25px;
+  background-color: darkblue;
+  font-weight: bold;
+  color: white;
+}
+
+.login-button:hover {
+  background-color: rgb(17, 17, 107);
+}
+
+.error-msg {
+  color: crimson;
+  font-weight: bold;
+  text-align: center;
+  grid-row: 1;
+}
+.hidden {
+  display: none;
+}
+
+#username-input {
+  grid-row: 2;
+}
+
+#password-input {
+  grid-row: 3;
+}

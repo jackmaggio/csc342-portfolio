@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "first_name": "Stu",
+    "last_name": "Dent",
+    "username": "student",
+    "avatar": "https://robohash.org/veniamdoloresenim.png?size=64x64&set=set1",
+    "password": "9726eb39d11ff5d227529ad2b8c371af8aa15a6d7206a50f0ef8f929b69f6cac12266870320ade8a73084d19dc08312d8080c6df1fcf88b45d16553307af68a1",
+    "salt": "6876061585c1a0693798e8a18bf3d9c9da8f536a99a1",
+    "forHomework": "Password is: password1"
+  },
+  {
+    "id": 2,
+    "first_name": "Gra",
+    "last_name": "Duate",
+    "username": "graduate",
+    "avatar": "https://robohash.org/nullaautemin.png?size=64x64&set=set1",
+    "password": "22dad9ce4f572290feea362dc500610816b411845ddfdc557a4106841f1fce3a20f3ecc84fd8108f9232adefe469dd41c029a10280874feae2c563f9a58f16a9",
+    "salt": "fb08f9f241a3b3c76a2f017075118693e7ab3c9222bc",
+    "forHomework": "Password is: password2"
+  },
+  {
+    "id": 3,
+    "first_name": "Vassily",
+    "last_name": "Yeskov",
+    "username": "vyeskov2",
+    "avatar": "https://robohash.org/teneturlaborenon.png?size=64x64&set=set1",
+    "password": "500c176606e70b513764f69cb3e3c00255e2f7004e354537c20340730811bc8b6d7a099fb2ea8f4bfe3b0f820fb3c712fc28b17a02dbc9a41d9bc83530dd68cb",
+    "salt": "f175d4a90cea405760aa2773c85727e5de87ca1ac0db",
+    "forHomework": "Password is: password3"
+  }
+]

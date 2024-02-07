@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/login_styles.css" />
+
+    <link
+      rel="stylesheet"
+      media="screen and (min-width: 530px)"
+      href="css/login_styles.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 529px)"
+      href="css/login_mobilestyles.css"
+    />
+    <script src="/js/login_scripts.js" type="module"></script>
+    <link
+      rel="manifest"
+      href="/manifest.webmanifest"
+      crossorigin="use-credentials"
+    />
+    <meta name="theme-color" content="#252831" />
+    <link rel="apple-touch-icon" href="/images/icon_192.png" />
+    <link rel="icon" type="image/png" href="/images/icon_192.png" />
+    <script src="/js/common.js" type="module"></script>
+  </head>
+  <body class="body">
+    <main class="login-page">
+      <section class="app-info">
+        <div class="title-wrapper">
+          <section class="title">QuizMe</section>
+        </div>
+        <div class="img-wrapper">
+          <img src="images/logo.png" />
+        </div>
+      </section>
+      <div class="login-wrapper">
+        <section class="login">
+          <div class="login-header-wrapper">
+            <section class="login-header">Login</section>
+          </div>
+          <input
+            id="email"
+            class="username"
+            type="text"
+            placeholder="Email..."
+          />
+          <input
+            id="password"
+            class="password"
+            type="password"
+            placeholder="Password..."
+          />
+          <button id="login-button">Continue</button>
+          <button id="signup-button">Sign Up</button>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>

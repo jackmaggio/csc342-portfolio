@@ -1,0 +1,202 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(64, 64, 180);
+}
+
+* {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+header {
+  background-color: white;
+}
+
+h1 {
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+  color: rgb(64, 64, 180);
+}
+
+h2 {
+  text-align: center;
+  text-wrap: wrap;
+}
+
+.studyset h2 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.options-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 500px;
+  margin: auto;
+}
+
+.option {
+  background-color: orange;
+  color: white;
+  font-weight: bold;
+  /* border: 2px solid black; */
+  border: none;
+  border-radius: 10px;
+  font-size: 30px;
+  margin: 20px;
+  padding: 10px;
+  width: 100%;
+}
+
+#study-button {
+  background-color: darkorange;
+}
+
+.option:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+.studyset-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+#create-studyset {
+  flex-grow: 1;
+  background-color: orange;
+  color: white;
+  margin-top: 20px;
+  aspect-ratio: auto;
+}
+
+.studyset {
+  flex-grow: 1;
+  background-color: white;
+  /* border: 2px solid black; */
+  /* aspect-ratio: 16/9; */
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  grid-template-rows: minmax(fit-content, 80%) minmax(fit-content, 20%);
+  row-gap: 10px;
+  word-wrap: break-word;
+}
+
+@media only screen and (max-width: 750px) {
+  .studyset {
+    width: 80%;
+  }
+}
+
+.studyset:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+.back-button-wrapper {
+  top: 0;
+  right: 0;
+  position: absolute;
+}
+.back-button {
+  background-color: cornflowerblue;
+  color: white;
+  font-size: 1.5dvw;
+  text-align: left;
+  box-shadow: 0dvw 0dvw 0.5dvw black;
+}
+
+.back-button:hover {
+  background-color: darkblue;
+  color: white;
+  font-size: 1.5dvw;
+  text-align: left;
+}
+
+@media only screen and (max-width: 750px) {
+  .back-button:hover {
+    font-size: 1.5dvw;
+  }
+}
+
+.edit-button {
+  height: 100%;
+  width: 50%;
+  margin: auto;
+  z-index: 1;
+  background-color: rgb(200, 200, 72);
+  font-weight: bold;
+  color: white;
+  border-radius: 10px;
+  /* border: 2px solid black; */
+}
+.edit-button:hover {
+  background-color: rgb(185, 185, 11);
+}
+.delete-button {
+  height: 100%;
+  width: 50%;
+  margin: auto;
+  z-index: 1;
+  background-color: rgb(228, 82, 82);
+  font-weight: bold;
+  color: white;
+  border-radius: 10px;
+  /* border: 2px solid black; */
+}
+.delete-button:hover {
+  background-color: red;
+}
+.cancel-button {
+  height: 100%;
+  width: 50%;
+  margin: auto;
+  z-index: 1;
+  background-color: grey;
+  font-weight: bold;
+  color: white;
+  /* border: 2px solid black; */
+  border-radius: 10px;
+}
+.cancel-button:hover {
+  background-color: darkgrey;
+}
+.submit-button {
+  height: 100%;
+  width: 50%;
+  margin: auto;
+  z-index: 1;
+  background-color: green;
+  font-weight: bold;
+  color: white;
+  /* border: 2px solid black; */
+  border-radius: 10px;
+}
+.submit-button:hover {
+  background-color: darkgreen;
+}
+.hidden {
+  display: none;
+}
+
+@media only screen and (max-width: 750px) {
+  .back-button:hover {
+    font-size: 5dvw;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .back-button {
+    font-size: 5dvw;
+  }
+}

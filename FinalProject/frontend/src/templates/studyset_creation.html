@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/create_studyset.css" />
+    <script src="/js/common.js" type="module"></script>
+    <script src="/js/studyset_creation_scripts.js" type="module"></script>
+    <title>Create StudySet</title>
+    <link
+      rel="manifest"
+      href="/manifest.webmanifest"
+      crossorigin="use-credentials"
+    />
+    <meta name="theme-color" content="#252831" />
+    <link rel="apple-touch-icon" href="/images/icon_192.png" />
+    <link rel="icon" type="image/png" href="/images/icon_192.png" />
+  </head>
+  <body>
+    <header>
+      <h1>QuizMe</h1>
+    </header>
+    <div class="header-wrapper">
+      <!-- <div class="header">Create Study Set</div> -->
+    </div>
+    <div class="title-wrapper">
+      <div class="title">Title</div>
+      <input
+        id="title-input"
+        type="text"
+        class="title-text"
+        placeholder="Title..."
+      />
+    </div>
+    <div class="cards-wrapper">
+      <div class="cards-title">Cards</div>
+      <div class="card-info-wrapper">
+        <div class="question">Question</div>
+        <textarea
+          cols="42"
+          rows="5"
+          id="question-input"
+          class="question-text"
+          placeholder="Question..."
+        ></textarea>
+        <div class="answer">Answer</div>
+        <textarea
+          cols="42"
+          rows="5"
+          id="answer-input"
+          class="answer-text"
+          placeholder="Answer..."
+        ></textarea>
+        <button id="add-card-button" class="add-card">Add Card</button>
+      </div>
+    </div>
+    <div class="create-wrapper">
+      <button id="submit-button" class="submit">Create Study Set</button>
+    </div>
+    <div class="back-button-wrapper">
+      <button id="back-button" class="back-button">Back</button>
+    </div>
+  </body>
+</html>
